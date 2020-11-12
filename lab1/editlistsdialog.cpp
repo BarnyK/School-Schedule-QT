@@ -21,6 +21,7 @@ EditListsDialog::EditListsDialog(
     connect(ui->listSelect, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &EditListsDialog::changeCurrentModel);
     connect(ui->removeButton, &QPushButton::clicked, this, &EditListsDialog::removeSelectedRow);
     connect(ui->addButton, &QPushButton::clicked, this, &EditListsDialog::addRow);
+    connect(ui->addTextEdit, &QLineEdit::returnPressed, this, &EditListsDialog::addRow);
 }
 
 EditListsDialog::~EditListsDialog()
@@ -54,7 +55,7 @@ void EditListsDialog::removeSelectedRow(){
 }
 
 void EditListsDialog::addRow(){
-    QString value = ui->addTextEdit->toPlainText();
+    QString value = ui->addTextEdit->text();
     if(value.size() > 0){
         currentModel->insertRow(currentModel->rowCount());
         QModelIndex i = currentModel->index(currentModel->rowCount()-1,0);

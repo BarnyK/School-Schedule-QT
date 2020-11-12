@@ -8,7 +8,7 @@
 #include <QString>
 #include <QStringListModel>
 #include <QListView>
-#include <QPlainTextEdit>
+#include <QLineEdit>
 
 namespace Ui {
 class EditListsDialog;
