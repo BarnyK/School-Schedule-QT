@@ -6,7 +6,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
+    setWindowTitle("School Planner");
     rooms = new QStringListModel();
     teachers = new QStringListModel();
     groups = new QStringListModel();

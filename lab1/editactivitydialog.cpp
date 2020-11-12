@@ -6,6 +6,7 @@ EditActivityDialog::EditActivityDialog(QWidget *parent) :
     ui(new Ui::EditActivityDialog)
 {
     ui->setupUi(this);
+    setWindowTitle("Edit Lists");
     classBox = ui->classBox;
     groupBox = ui->groupBox;
     teacherBox = ui->teachBox;
