@@ -73,7 +73,7 @@ Qt::ItemFlags ActivityModel::flags(const QModelIndex &index) const{
 }
 
 int ActivityModel::activityExists(int day, int slot, QString room){
-    // Checks if activity exists and returns it index in QList if it does
+    // Checks if activity exists and returns its index in QList if it does
     for(int i=0; i<activities[room].size(); i++){
         if(activities[room][i].day == day && activities[room][i].slot == slot)
             return i;
@@ -88,6 +88,7 @@ void ActivityModel::changeActiveRoom(QString room){
 }
 
 QList<Activity> ActivityModel::getAllActivities(){
+    // Flattens QMap of activities into a list and returns it
     QList<Activity> result;
     QList<Activity> curList;
     for(QMap<QString, QList<Activity>>::const_iterator it = activities.cbegin(), end=activities.cend(); it != end; ++it){

@@ -48,6 +48,7 @@ void EditActivityDialog::setComboBoxLists(QStringListModel *r, QStringListModel 
     teacherBox->setModel(t);
     roomBox->setModel(r);
 }
+
 void EditActivityDialog::setComboBoxItems(int d, int h, QString r, QString g, QString c, QString t){
     int index;
     ui->dayBox->setCurrentIndex(d);
@@ -92,6 +93,7 @@ void EditActivityDialog::disableTopBoxes(){
     ui->hourBox->setDisabled(true);
     ui->dayBox->setDisabled(true);
 }
+
 QString EditActivityDialog::getClass(){
     return classBox->currentText();
 }
@@ -103,6 +105,7 @@ QString EditActivityDialog::getGroup(){
 QString EditActivityDialog::getTeacher(){
     return teacherBox->currentText();
 }
+
 int EditActivityDialog::getDay(){
     return ui->dayBox->currentIndex();
 }
@@ -116,6 +119,7 @@ QString EditActivityDialog::getRoom(){
 }
 
 void EditActivityDialog::enableOkButton(){
+    // Validates if data in boxes is correct and enables the ok button if true
     int h = ui->hourBox->currentIndex();
     int d = ui->dayBox->currentIndex();
     QString r = roomBox->currentText();
@@ -126,6 +130,7 @@ void EditActivityDialog::enableOkButton(){
         okButton->setEnabled(true);
     }
 }
+
 void EditActivityDialog::disableRestoreButton(){
     ui->buttonBox->button(QDialogButtonBox::RestoreDefaults)->setDisabled(true);
 }
