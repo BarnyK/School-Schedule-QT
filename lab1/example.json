@@ -1,0 +1,156 @@
+{
+    "activities": [
+        {
+            "class": "Math",
+            "day": 0,
+            "group": "1a",
+            "room": "101",
+            "slot": 1,
+            "teacher": "Jones"
+        },
+        {
+            "class": "Physics",
+            "day": 1,
+            "group": "1d",
+            "room": "101",
+            "slot": 1,
+            "teacher": "Kowalski"
+        },
+        {
+            "class": "Physics",
+            "day": 2,
+            "group": "1b",
+            "room": "101",
+            "slot": 1,
+            "teacher": "Kowalski"
+        },
+        {
+            "class": "Physical Education",
+            "day": 3,
+            "group": "1b",
+            "room": "101",
+            "slot": 1,
+            "teacher": "Smith"
+        },
+        {
+            "class": "English",
+            "day": 4,
+            "group": "1b",
+            "room": "101",
+            "slot": 1,
+            "teacher": "Smith"
+        },
+        {
+            "class": "Physical Education",
+            "day": 0,
+            "group": "1b",
+            "room": "101",
+            "slot": 7,
+            "teacher": "Smith"
+        },
+        {
+            "class": "Physical Education",
+            "day": 2,
+            "group": "1c",
+            "room": "101",
+            "slot": 3,
+            "teacher": "Smith"
+        },
+        {
+            "class": "Physics",
+            "day": 2,
+            "group": "1b",
+            "room": "101",
+            "slot": 5,
+            "teacher": "Smith"
+        },
+        {
+            "class": "Physical Education",
+            "day": 2,
+            "group": "2c",
+            "room": "102",
+            "slot": 2,
+            "teacher": "Miller"
+        },
+        {
+            "class": "Physics",
+            "day": 2,
+            "group": "3c",
+            "room": "102",
+            "slot": 3,
+            "teacher": "Miller"
+        },
+        {
+            "class": "Geography",
+            "day": 2,
+            "group": "2a",
+            "room": "102",
+            "slot": 1,
+            "teacher": "Garcia"
+        },
+        {
+            "class": "English",
+            "day": 1,
+            "group": "1c",
+            "room": "102",
+            "slot": 3,
+            "teacher": "Jones"
+        },
+        {
+            "class": "Physical Education",
+            "day": 3,
+            "group": "1e",
+            "room": "102",
+            "slot": 3,
+            "teacher": "Williams"
+        }
+    ],
+    "classes": [
+        "Math",
+        "Physics",
+        "Physical Education",
+        "English",
+        "Geography",
+        "Chemistry"
+    ],
+    "groups": [
+        "1a",
+        "1b",
+        "1c",
+        "1d",
+        "1e",
+        "2a",
+        "2b",
+        "2c",
+        "2d",
+        "2e",
+        "3a",
+        "3b",
+        "3c",
+        "3d",
+        "3e"
+    ],
+    "rooms": [
+        "101",
+        "102",
+        "103",
+        "104",
+        "105",
+        "201",
+        "202",
+        "203",
+        "204",
+        "205"
+    ],
+    "teachers": [
+        "Kowalski",
+        "Smith",
+        "Johnson",
+        "Williams",
+        "Brown",
+        "Jones",
+        "Miller",
+        "Davis",
+        "Garcia"
+    ]
+}
