@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>775</width>
-    <height>536</height>
+    <width>682</width>
+    <height>494</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -60,8 +60,14 @@
       <attribute name="horizontalHeaderCascadingSectionResizes">
        <bool>true</bool>
       </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>111</number>
+      </attribute>
       <attribute name="verticalHeaderCascadingSectionResizes">
        <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>40</number>
       </attribute>
      </widget>
     </item>
@@ -72,7 +78,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>775</width>
+     <width>682</width>
      <height>22</height>
     </rect>
    </property>

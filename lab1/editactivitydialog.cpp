@@ -10,6 +10,7 @@ EditActivityDialog::EditActivityDialog(QWidget *parent) :
     groupBox = ui->groupBox;
     teacherBox = ui->teachBox;
     roomBox = ui->roomBox;
+
     dModel = new QStringListModel;
     hModel = new QStringListModel;
     dModel->setStringList(days);
@@ -114,10 +115,13 @@ QString EditActivityDialog::getRoom(){
 }
 
 void EditActivityDialog::enableOkButton(){
+    int h = ui->hourBox->currentIndex();
+    int d = ui->dayBox->currentIndex();
+    QString r = roomBox->currentText();
     QString c = getClass();
     QString g = getGroup();
     QString t = getTeacher();
-    if(((c != "") && (g != "") && (t != "")) && (c != classInitial || g != groupInitial || t != teacherInitial)){
+    if(((h != -1) && (d != -1) && (r != "") && (c != "") && (g != "") && (t != "")) && (c != classInitial || g != groupInitial || t != teacherInitial)){
         okButton->setEnabled(true);
     }
 }
